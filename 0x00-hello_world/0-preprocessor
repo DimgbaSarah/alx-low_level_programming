@@ -1,8 +1,4 @@
-ssor.swp
-rm .0-preprocessor.swp
-vi 0-preprocessor
-i
+ 
 #!/bin/bash
 gcc $CFILE -E -o c
-
 

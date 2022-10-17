@@ -1,2 +1,5 @@
+vi 0-preprocessor
+i
 #!/bin/bash
- gcc -E  -o c
+gcc -E $CFILE -o c
+

@@ -7,23 +7,12 @@ include "main.h"
 
 char *rot13(char *)
 {
-	int count = 0, i;
-	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-
-	while (*(s + count) != '\0')
-	{
-		for (i = 0; i < 52; i++;)
-		{
-		if (*(s + count) == alphabet[i])
-		{
-			*(s + count) = rot13[i];
-			break;
-		}
-		}
-	count++;
-	}
-
-	return (s);
+	if (s == NULL)
+		return (NULL);
+for (int i = 0; s[i] != '\0'; i++)
+if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
+s[i] += 13;
+else if ((s[i] >= 'n' && s[i] <= 'z') || (s[i] >= 'N' && s[i] <= 'Z'))
+s[i] -= 13;
+return (s);
 }
-

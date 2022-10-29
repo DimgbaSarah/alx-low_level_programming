@@ -1,2 +1,1 @@
-0x04 more function nested loop
-
+more functions nested loops
